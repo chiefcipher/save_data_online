@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content="Samuel Ohiani Yakubu" >   
+    <title> Save Scores Online  </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id='wrapper' > 
+        <section id="head"  > 
+            <div class='title roboto six-hundred'> 
+                Save scores for games/store data online 
+            </div>
+        </section>
+        <section id='required-players'> 
+            <div class='players'>
+            <input type='number' class='no-outline-border' name='no-players' id='no-of-players' placeholder="Enter number of players!" /> <br>
+                <input type='number' class='no-outline-border' id='units-of-play' placeholder="Score Units" /> <br>
+                <button id='players-num-btn' class='roboto six-hundred no-outline-border'>Enter</button>
+            </div>
+            <br> 
+        </section> 
+        <section id='players-almost'>   
+            <div class='players' > 
+                <div class='player-name' >Player 1 Name: </div>
+                <input type='text' class='players-name-input no-outline-border' placeholder="Enter name" />  <br> 
+                <div class='player-name' >Player 2 Name: </div>
+                <input type='text' class='players-name-input no-outline-border' placeholder="Enter name" />  <br> 
+                <button id='submit-players-names' class='no-outline-border roboto five-hundred'> Submit players </button> 
+          </div>
+             </section>
+        
+        <section id='created-players' > 
+            <table  cellspaciing = 0 > 
+                <thead> 
+                    <tr> <th>S/N</th><th>Name </th> <th> Score</th> <th colspan="2">Change (+/-)</th> <th>Delete Player</th></tr>
+                </thead>
+                <tbody> 
+
+                </tbody>
+            </table>
+            
+            <button id='save-game-data' class='no-outline-border roboto six-hundred '>Save Game Data </button>
+            <button id='clear-game-data' class='no-outline-border roboto six-hundred' >Clear Game Data </button> 
+        </section>
+        <section id='footer' class="roboto " > 
+            NOTE : <br> 
+            <ul> 
+                <li> Data saved is stored in the browser so changing browser/clearing browser data would make you unable to access previous game data</li>
+                <li> If there is a previous game data saved to the browser, it loads it first of which you can then decide to clear it or continue from where you stopped. </li>
+                <li> Enter player names directly for two players (default score unit would be 5) or enter number of players to create with unit.</li>
+                <li> Click on the "Save Game Data" to save details for next time.</li>
+            </ul>
+            <button class='roboto five-hundred no-outline-border' id='clear-note' > Clear Note Text </button>
+        </section>  
+    </div>
+    
+    <script src='script.js' ></script>
+</body>
+</html>

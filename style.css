@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hanalei&family=PT+Sans&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(14, 28, 54);
+  color: white;
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#wrapper {
+  width: 95%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 25px 2.5% 10px;
+  height: 100%;
+  line-height: 150%;
+}
+.roboto {
+  font-family: "Roboto", "sans-serif";
+}
+.six-hundred {
+  font-weight: 600;
+}
+
+.five-hundred {
+  font-weight: 500;
+}
+.no-outline-border {
+  outline: none;
+  border: none;
+}
+.text-center { 
+  text-align :center ; 
+}
+#head > .title {
+  text-align: center; 
+  letter-spacing: 1.3px ;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#required-players {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  text-align: center;
+}
+
+
+#players-almost .players * {
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 500;
+  font-family: "Roboto" , sans-serif;
+}
+
+#players-almost .players br {
+  display: block;
+  margin: 3px 0;
+}
+
+.players * {
+  min-height: 25px;
+  text-align: center;
+  margin: 5px 0;
+}
+.players input {
+  padding: 5px;
+  font-size: 16px;
+  background: white;
+  border-radius: 3px;
+}
+button {
+  padding: 5px 10px;
+  color: white;
+  background: #0ddd64;
+  border-radius: 3px;
+}
+.player-name {
+  font-weight: 700;
+  font-family: "Roboto" , sans-serif;
+}
+button:hover {
+  background: hsl(145, 89%, 36%);
+}
+.material-icons.change { 
+  color : black ;
+}
+
+
+#created-players {
+  display: none ;
+}
+#created-players table {
+  font-family: "Roboto" , sans-serif;
+  width: 100% ; 
+  font-size : 14px ;
+  margin :  0 auto 
+}
+
+#created-players table th {
+  background: hsl(219, 59%, 23%);
+}
+#created-players table tr:nth-child(even) {
+  background: rgb(72, 115, 194);
+}
+#created-players table tr:nth-child(odd) {
+  background: rgb(39, 111, 245);
+}
+#created-players table,#created-players td,#created-players th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 5px; 
+}
+@media (min-width : 570px) {  
+  #created-players td > *  { 
+    display  :inline-block ; 
+    vertical-align: middle; 
+  } 
+}
+#created-players th {
+  text-align: center;
+} 
+
+#created-players button {  
+  color  : #000  ;
+  margin :  5px 3px 5px 0 ;
+   
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+
+#footer { 
+  margin : 10px auto ;
+  width :  95% ;
+  font-weight : 200;
+  font-size : 14px ;   
+  border-top : 1px solid white ; 
+  padding-top : 10px ;
+
+}
+#footer ul{ 
+  list-style-type: disc;
+  list-style-position: inside ;
+}
+
+@media (max-width : 570px) { 
+  .add-subtract-text {  
+    color :hsl(145, 89%, 36%) ; 
+    display : none ;
+  } 
+  .material-icons.change { 
+    display : none ;
+  }
+  #created-players table  { 
+    font-size : 12px ;
+  }
+}
+
+@media (max-width : 300px) { 
+  body *{  
+    font-size : 8px ; 
+  } 
+  /* #players-almost .players * {
+    font-size : 10px ; 
+  }
+  .players input {
+  font-size : 10px ;
+  }
+  #footer { 
+    font-size : 10px;
+  } 
+  */
+  #created-players table , #created-players table *  { 
+    padding : 0 ; 
+  } 
+  #footer *  { 
+    padding : 0 ; 
+    margin : 0 ; 
+  }
+} 
